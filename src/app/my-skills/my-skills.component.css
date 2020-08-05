@@ -1,0 +1,149 @@
+.my_skills {
+  background-color: #45a095;
+  padding: 20px;
+  font-size: 40px;
+  color: #eceae7;
+  box-shadow: 8px 8px 10px #bbb9b7;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.html_css_js {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.html_css_js_text {
+  color: #7e7b78;
+}
+.html_css_js_text h2 {
+  font-weight: bold;
+}
+.html_css_js_text span {
+  color: #b14a31;
+}
+.html_css_js_image {
+  padding: 10px;
+}
+.html_css_js_image img {
+  width: 300px;
+}
+
+/* Bootstrap */
+
+.bootstrap_4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.bootstrap_4_image img {
+  width: 100%;
+}
+.bootstrap_4_text {
+  justify-self: right;
+  color: #7e7b78;
+  align-self: center;
+}
+.bootstrap_4_text h2 {
+  font-weight: bold;
+}
+.bootstrap_4_text span {
+  color: #b14a31;
+}
+
+/* Angular */
+
+.angular_2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.angular_2_image {
+  padding: 10px;
+}
+.angular_2_image img {
+  width: 300px;
+}
+
+.angular_2_text {
+  color: #7e7b78;
+}
+.angular_2_text h2 {
+  font-weight: bold;
+}
+.angular_2_text span {
+  color: #b14a31;
+}
+
+/* React */
+
+.react_js {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 50px;
+  justify-items: center;
+}
+.react_js_text {
+  justify-self: right;
+  color: #7e7b78;
+  align-self: center;
+}
+.react_js_text h2 {
+  font-weight: bold;
+}
+.react_js_text span {
+  color: #b14a31;
+}
+
+.react_js_image img {
+  width: 100%;
+}
+
+/* C# */
+
+.c_sharp {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  justify-items: center;
+}
+.c_sharp_text {
+  color: #7e7b78;
+  align-self: center;
+}
+.c_sharp_text h2 {
+  font-weight: bold;
+}
+.c_sharp_text span {
+  color: #b14a31;
+}
+
+.c_sharp_image img {
+  width: 100%;
+}
+
+@media (max-width: 420px) {
+  .container {
+    padding: 20px;
+  }
+  .html_css_js_image,
+  .bootstrap_4_image,
+  .angular_2_image,
+  .react_js_image,
+  .c_sharp_image {
+    display: none;
+  }
+
+  .bootstrap_4,
+  .angular_2,
+  .react_js,
+  .c_sharp {
+    margin-top: 10px;
+  }
+}

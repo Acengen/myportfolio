@@ -1,0 +1,29 @@
+<div class="header_myweb">
+  <div class="header_myweb_me">
+    <h1>HELLO, I AM DJORDJE</h1>
+    <p>FRONT END DEVELOPER</p>
+    <div class="my_passion">
+      <p>
+        "I design and code beautifully simple things, and I love what I do."
+      </p>
+    </div>
+    <div class="my_image">
+      <img
+        src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/supportmale-512.png"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="header_myweb_clashsides">
+    <i
+      class="fa fa-plus-circle"
+      *ngIf="showCircle"
+      (click)="removeLeftandRightSlide()"
+      [ngClass]="{ closePlus: removeClass }"
+    >
+      <span class="enter_my_world">Enter my world</span></i
+    >
+    <div class="left_side" [ngClass]="{ closeslide: removeClass }"></div>
+    <div class="right-side" [ngClass]="{ closeslide: removeClass }"></div>
+  </div>
+</div>

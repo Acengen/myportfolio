@@ -1,0 +1,41 @@
+.about_me_question {
+  background-color: #45a095;
+  padding: 20px;
+  font-size: 40px;
+  color: #eceae7;
+  box-shadow: 8px 8px 10px #bbb9b7;
+  text-align: center;
+}
+
+.about_me_text {
+  text-align: center;
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+.about_me_paragraph {
+  max-width: 800px;
+  color: #7e7b78;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.about {
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 420px) {
+  .about_me_text {
+    padding: 20px;
+    text-align: unset;
+  }
+}
