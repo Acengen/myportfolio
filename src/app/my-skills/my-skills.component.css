@@ -128,6 +128,27 @@
   width: 100%;
 }
 
+.unity_3d {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 50px;
+  justify-items: center;
+}
+.unity_3d_text {
+  justify-self: right;
+  color: #7e7b78;
+  align-self: center;
+}
+.unity_3d_text h2 {
+  font-weight: bold;
+}
+.unity_3d_text span {
+  color: #b14a31;
+}
+.unity_3d_image img {
+  width: 100%;
+}
+
 @media (max-width: 420px) {
   .container {
     padding: 20px;
@@ -136,14 +157,16 @@
   .bootstrap_4_image,
   .angular_2_image,
   .react_js_image,
-  .c_sharp_image {
+  .c_sharp_image,
+  .unity_3d_image {
     display: none;
   }
 
   .bootstrap_4,
   .angular_2,
   .react_js,
-  .c_sharp {
+  .c_sharp,
+  .unity_3d {
     margin-top: 10px;
   }
 }
