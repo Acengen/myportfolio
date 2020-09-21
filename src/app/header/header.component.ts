@@ -9,6 +9,7 @@ import { MywebService } from '../myweb.service';
 export class HeaderComponent implements OnInit {
   showCircle: boolean = false;
   removeClass: boolean;
+  arrowShow:boolean = true;
   constructor(private mywebService: MywebService) {}
 
   ngOnInit(): void {
@@ -18,9 +19,16 @@ export class HeaderComponent implements OnInit {
     setTimeout(() => {
       this.showCircle = true;
     }, 1400);
+
+   
   }
 
   removeLeftandRightSlide() {
     this.mywebService.removeOnClick();
+  }
+
+  removeonclick() {
+      this.arrowShow = false;
+      console.log(this.arrowShow);
   }
 }

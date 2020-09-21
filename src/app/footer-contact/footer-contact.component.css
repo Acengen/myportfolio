@@ -1,0 +1,51 @@
+.contact-me-footer {
+   
+    text-align: center;
+    margin-top: 50px;
+}
+
+.fa-facebook-official {
+    color: rgb(0, 81, 255);
+    font-size: 50px;
+    transform: translateY(-30px);
+    z-index: 99;
+    margin: 10px;
+    background-color: white;
+}
+
+.fa-instagram {
+    color: rgb(224, 93, 41);
+    font-size: 50px;
+    transform: translateY(-30px);
+    z-index: 99;
+    margin: 10px;
+    background-color: white;
+}
+
+.fa-linkedin-square {
+    color: rgb(20, 68, 172);
+    font-size: 50px;
+    transform: translateY(-30px);
+    z-index: 99;
+    margin: 10px;
+    background-color: white;
+}
+
+.fa-git-square{
+    color: rgb(20, 68, 172);
+    font-size: 50px;
+    transform: translateY(-30px);
+    z-index: 99;
+    margin: 10px;
+    background-color: white;
+}
+
+.allrights {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+}

@@ -169,4 +169,17 @@
   .unity_3d {
     margin-top: 10px;
   }
+
+  .my_skills h1 {
+    font-size: 20px;
+  }
+  .my_skills {
+    padding: 10px;
+  }
+  .html_css_js {
+    margin-top: 5px;
+  }
+  .html_css_js_text h2, .react_js_text h2, .bootstrap_4_text h2, .c_sharp_text h2, .angular_2_text h2, .unity_3d_text h2 {
+    font-size: 20px;
+  }
 }

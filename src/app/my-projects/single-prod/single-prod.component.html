@@ -1,0 +1,13 @@
+<div class="card">
+    <i class="fa fa-mouse-pointer"></i>
+    <img src={{project.image}} alt="">
+       <div class="abs">
+        <p>{{project.name}}</p>
+        <a (click)="isConfigClicked()">VIEW PROJECT</a>    
+       </div>
+</div>
+<div class="configtogo" *ngIf="isConfig">
+    <h1>ARE YOU SURE?</h1>
+    <button class="approve"><a href={{project.link}} target="_blank"><i class="fa fa-check"></i></a></button>
+    <button class="decline" (click)="isNotConfig()"><i class="fa fa-close"></i></button>
+</div>
