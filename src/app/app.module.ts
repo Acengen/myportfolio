@@ -15,6 +15,7 @@ import { StartComponentComponent } from './my-projects/start-component/start-com
 import { MyGamesComponent } from './my-games/my-games.component';
 import { SingleGameComponent } from './my-games/single-game/single-game.component';
 import { FooterContactComponent } from './footer-contact/footer-contact.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FooterContactComponent } from './footer-contact/footer-contact.componen
     StartComponentComponent,
     MyGamesComponent,
     SingleGameComponent,
-    FooterContactComponent
+    FooterContactComponent,
+    WelcomeComponent
   ],
   imports: [BrowserModule],
   providers: [],

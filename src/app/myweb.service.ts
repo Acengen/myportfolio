@@ -7,11 +7,14 @@ import { Injectable, EventEmitter } from '@angular/core';
 })
 export class MywebService {
   projects:Project[] = [
-    {image: "../../assets/images/neo.png", link:"https://mobilestore-5e2b5.web.app/products", name:"NEO MOBILE",desc:"Developing using Angular" },
-    {image: "../../assets/images/rocket.png", link:"https://acengen.github.io/Business-marketing/", name:"BUSSINES MARKETING", desc:"Developing with only html/css/javascript"},
-    {image: "../../assets/images/applicationform.jpg", link:"https://student-form-app.web.app/", name: "APPLICATION FORM", desc:"Developing using Angular"},
-    {image:"../../assets/images/pai_validated.jpg", link:"https://acengen.github.io/form/", name:"FORM VALIDATION", desc:"html/css/javascript/regEx"},
-    {image: "../../assets/images/TimeTracker.jpg", link:"https://timetracking-71bf1.web.app/homepage", name:"TIMETRACK", desc:"Developing using Angular"}
+    {image: "../../../assets/images/1_7WeQGvRghyIVWVliG3kMsQ.png", link:"https://mobilestore-5e2b5.web.app/products",gitlink:"https://github.com/Acengen/NEO_Mobile", name:"NEO MOBILE",desc:"This project was made like vip mobile, where you can purchase mobile and packages.", way:"angular" },
+    {image: "../../assets/images/htmlcssjs-overview.png", link:"https://acengen.github.io/Business-marketing/",gitlink:"https://github.com/Acengen/Business-marketing", name:"BUSSINES MARKETING", desc:"This project is very simple one. It use to show my design skills.", way:"javascript"},
+    {image: "../../../assets/images/1_7WeQGvRghyIVWVliG3kMsQ.png", link:"https://student-form-app.web.app/",gitlink:"https://github.com/Acengen/student-application", name: "APPLICATION FORM", desc:"This project is samply a form with all validations required.", way:"angular"},
+    {image:"../../assets/images/htmlcssjs-overview.png", link:"https://acengen.github.io/form/",gitlink:"https://github.com/Acengen/form", name:"FORM VALIDATION", desc:"This project is samply a form with all validations required.", way:"js & regEx"},
+    {image: "../../../assets/images/1_7WeQGvRghyIVWVliG3kMsQ.png", link:"https://timetracking-71bf1.web.app/homepage",gitlink:"https://github.com/Acengen/TimeTrack", name:"TIMETRACK", desc:"This project tracks your time and storing it where you can check your total time.", way: "angular"},
+    {image: "../../assets/images/code-programming-javascript-software-develop-command-language-512.png", link:"https://acengen.github.io/numberGuesser/",gitlink:"https://github.com/Acengen/numberGuesser", name:"NUMBER GUESSER", desc:"This app is for guessing a number from 1 to 10", way:"javascript"},
+    {image:"../../assets/images/htmlcssjs-overview.png", link:"https://acengen.github.io/pcgamer-with-json-server/", name:"GAME SHOP",gitlink:"https://github.com/Acengen/pcgamer-with-json-server", desc:"This project is like a game shop where you can see how much game cost.", way:"js & json db"},
+    {image:"../../assets/images/1_7WeQGvRghyIVWVliG3kMsQ.png", link:"https://alps-6adfd.web.app/alps-story", name:"TRAVEL ALPS",desc:"This project is used for booking and finding desire hotel.", way:"angular", gitlink:"https://github.com/Acengen/travel-hotels"}
   ]
 
   games:Game[] =[

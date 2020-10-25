@@ -1,13 +1,35 @@
-<div class="card">
-    <i class="fa fa-mouse-pointer"></i>
+<!-- <div class="card">
+    <span class="way-of-doing">{{project.way}}</span>
     <img src={{project.image}} alt="">
-       <div class="abs">
+    <div class="card-body">
         <p>{{project.name}}</p>
-        <a (click)="isConfigClicked()">VIEW PROJECT</a>    
-       </div>
+        <span>{{project.desc}}</span>
+    </div>
+       <div class="card-bottom">
+        <a (click)="isConfigClicked()">view project <i class='fas fa-arrow-right'></i></a>  
+    </div>
+</div> -->
+<!-- Other cards same thing -->
+
+<div class="card">
+    <div class="card-header">
+        <img [src]="project.image" alt="">
+    </div>
+    <div class="card-body">
+        <p>{{project.name}}</p>
+        <span>{{project.desc}}</span>
+    </div>
+    <div class="card-bottom">
+        <a href="{{project.gitlink}}" target="_blank">Github <i class="fa fa-github-alt"></i></a>
+        <a href="{{project.link}}" target="_blank">Web <i class="fa fa-link"></i></a>
+        
+    </div>
 </div>
-<div class="configtogo" *ngIf="isConfig">
-    <h1>ARE YOU SURE?</h1>
-    <button class="approve"><a href={{project.link}} target="_blank"><i class="fa fa-check"></i></a></button>
-    <button class="decline" (click)="isNotConfig()"><i class="fa fa-close"></i></button>
-</div>
+
+
+<!-- <div class="configtogo" *ngIf="isConfig">
+    <h1>Are you sure '{{project.name}}'?</h1>
+    <a class="approve"  (click)="isNotConfig()" href={{project.link}} target="_blank"><i class="fa fa-link"></i></a>
+    <a class="approve"  (click)="isNotConfig()" href={{project.gitlink}} target="_blank"><i class="fa fa-github-alt"></i></a>
+    <a class="decline" (click)="isNotConfig()"><i class="fa fa-close"></i></a>
+</div> -->

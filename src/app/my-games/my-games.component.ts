@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class MyGamesComponent implements OnInit {
   games:Game[];
   isActive:boolean;
+  
   constructor(private webService:MywebService) { }
 
   ngOnInit(): void {

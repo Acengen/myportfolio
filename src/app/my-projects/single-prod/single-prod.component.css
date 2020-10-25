@@ -1,83 +1,70 @@
-.card {
+/* .card {
     max-width: 400px;
-    height: 300px;
-    position: relative;
+    color: white;
     cursor: pointer;
     border: none;
     border-radius: 0px;
     margin: 10px;
+    background-color: #e2e2e2;
+    position: relative;
 }
-.card-bottom {
-    display: none;
-    background-color: #7e7b78;
-    color: #eceae7;
-    padding: 10px;
-    -webkit-animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: scale-up-tl 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+.way-of-doing {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  background-color: #474746;
+  color: #ffffff;
+  padding: 10px;
+}
+.card-body {
+  height: 100px;
 }
 .card img {
     width: 100%;
-    height: 100%;
+    padding: 10px;
+    height: 250px;
     display: block;  
 }
-.abs {
+/* .abs {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-.card i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.822);
-}
-.card:hover i {
-    display: none;
-}
+} */
+/* 
 .card a {
     text-decoration:  none;
-    border: 4px solid white;
-    color: #7e7b78;
     padding: 10px;
+    color: #ffffff;
+    float: right;
     font-weight: bold;
-    opacity: 0;
+    background-color: #207c71;
     font-size: 15px;
-    display: block;
+   
+}
+.card a:hover {
+  background-color:#474746 ;
+}
+.card:hover {
+  background-color: #207c71;
 }
 .card p {
     font-weight: bold;
     font-size: 15px;
-    opacity: 0;
-    padding: 10px;
+    color: rgb(99, 99, 99);
     margin-bottom: 5px;
 }
-.card:hover img {
-    opacity: 0.3;
-    transition: 0.3s ease-in-out;
-}
-.card:hover a {
-    color: #474746;
-    border-color: #474746;
-    opacity: 1;
-    transition: 0.3s ease-in-out;
-}
-
-.card:hover p {
-    opacity: 1;
-    color: #474746;
-}
-.card:hover {
-    -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-          animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-    
+.card-body p {
+  font-size: 10px;
+  color:rgb(99, 99, 99);
 
 }
-.card:hover .card-bottom{
-    display: block;
+.card:hover p, .card:hover span {
+  color: #ffffff;
+}
+.card-body span {
+  color: rgb(99, 99, 99);
 }
 
 .info:hover {
@@ -86,30 +73,96 @@
 .info {
     border:none !important;
 }
-
+*/
 
 .configtogo {
   position: fixed;
   text-align: center;
-  background-color: #7e7b78;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  background-color: #474746;
   z-index: 999;
   padding: 20px;
   color: #eceae7;
-  
+  animation: popCheck 0.2s ease-in-out forwards;
 }
+
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 0px;
+  margin: 5px;
+  box-shadow: 1px 2px 2px #bbbbbbb6;
+  border: none;
+}
+
+.card-header {
+  border-bottom: 1px solid #bbbbbba4;
+  height: 50%;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.card-body {
+  height: 40%;
+  text-align: center;
+}
+.card-bottom {
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #bbbbbba4;
+  background-color: #f0f0f0;
+}
+.card a {
+  cursor: pointer;
+  color: #3e3e3e;
+}
+.card a:hover {
+  font-weight: bold;
+  color: #207c71;
+}
+.card:hover {
+  background-color: #207c71;
+  transition: 0.3s ease-in-out;
+}
+.card:hover p, .card:hover span {
+  color: #f0f0f0;
+}
+.card img {
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgb(231, 231, 231);
+  transform: translateY(90px);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.card p {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #474746;
+}
+.card span {
+  font-size: 12px;
+}
+
 .configtogo h1 {
   color: #eceae7;
-  font-size: 25px;
+  font-size:30px;
+  padding: 10px;
 }
-.configtogo button {
+.configtogo a {
   border: none;
- 
+  text-decoration: none;
   color: #eceae7;
   padding:10px 20px;
-  font-size: 20px;
+  font-size: 30px;
+  cursor: pointer;
 }
 .approve {
   background-color: #207c71;
@@ -123,14 +176,11 @@
 .approve:hover {
   background-color: #207c7194;
 }
-.configtogo a {
-  color: #eceae7;
-  text-decoration: none;
-}
+
 @-webkit-keyframes shadow-pop-tr {
     0% {
       -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
-              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+              box-shadow: 0 0 #bebebe, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
       -webkit-transform: translateX(0) translateY(0);
               transform: translateX(0) translateY(0);
     }
@@ -155,36 +205,15 @@
               transform: translateX(-8px) translateY(8px);
     }
   }
+
   
-  
-  
-  
-@-webkit-keyframes scale-up-tl {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
+@media(max-width:420px) {
+  .configtogo {
+    background-color: #474746;
+    width: 100%;
   }
-  @keyframes scale-up-tl {
-    0% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-transform-origin: 0% 0%;
-              transform-origin: 0% 0%;
-    }
+  .configtogo h1 {
+    color: #eceae7;
   }
-  
+
+}
