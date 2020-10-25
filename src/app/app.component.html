@@ -2,9 +2,13 @@
 <app-welcome></app-welcome>
 <div class="container-fluid">
   <app-header></app-header>
-  <app-about-me></app-about-me>
-  <app-my-skills></app-my-skills>
-  <app-my-projects></app-my-projects>
-  <app-my-games></app-my-games>
+  <div class="page-over" *ngIf="!isActive;else null">
+    <p>click on enter</p>
+  </div>
+    <app-about-me></app-about-me>
+    <app-my-skills></app-my-skills>
+    <app-my-projects></app-my-projects>
+    <app-my-games></app-my-games>
+  
 </div>
 <app-footer-contact></app-footer-contact>

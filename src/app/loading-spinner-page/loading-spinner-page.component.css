@@ -15,10 +15,10 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #32ff7e;
+  background-color: #45a095;
   display: inline-block;
   margin: 4px;
-  box-shadow: 0 0 8px 1px #32ff7e;
+  box-shadow: 0 0 8px 1px #45a095;
   transition: .5s;
   
 }

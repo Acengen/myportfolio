@@ -1,10 +1,25 @@
+
+<div class="contact-form" *ngIf="isActive">
+    <h1>CONTACT ME</h1>
+    <p>FEEL FREE TO SEND A MESSAGE</p>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <label>NAME</label>
+        <input type="text" class="form-control" name="name" #name="ngModel" ngModel required>
+        <span *ngIf="!name.valid && name.touched">Name required</span>
+        <label>MESSAGE</label>
+        <textarea class="form-control" name="txtarea" ngModel #txtarea="ngModel" required cols="30" rows="5"></textarea>
+        <span *ngIf="!txtarea.valid && txtarea.touched">Enter at least 5 char</span>
+        <button [disabled]="!f.valid" type="submit">SUBMIT</button>
+    </form>
+    <div *ngIf="isSubmited" style="text-align: center;">
+        <i class="fa fa-check-circle"></i>
+    </div>
+</div>
 <div class="contact-me-footer" *ngIf="isActive">
     <a href="https://www.facebook.com/kocic2?ref=bookmarks" target="_blank"><i class="fa fa-facebook-official"></i></a>
     <a href="https://www.instagram.com/djordjekocic89/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
     <a href="https://www.linkedin.com/in/djordje-kocic-3383881a0/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
     <a href="https://github.com/Acengen" target="_blank"><i class="fa fa-git-square"></i></a>
-    <p>CONTACT ME</p>
-
     <div class="allrights">
         <span>All rights reserved<i class="fa fa-copyright"></i></span>
     </div>

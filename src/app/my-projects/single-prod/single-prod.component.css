@@ -94,15 +94,18 @@
   height: 300px;
   border-radius: 0px;
   margin: 5px;
-  box-shadow: 1px 2px 2px #bbbbbbb6;
+  box-shadow: 3px 4px 5px #bbbbbbb6;
   border: none;
+  background-color: #207c71;
 }
 
 .card-header {
   border-bottom: 1px solid #bbbbbba4;
   height: 50%;
   text-align: center;
+  opacity: 0.9;
   background-color: #f0f0f0;
+  
 }
 .card-body {
   height: 40%;
@@ -117,6 +120,9 @@
   border-top: 1px solid #bbbbbba4;
   background-color: #f0f0f0;
 }
+.card-body p {
+  color: #f0f0f0;
+}
 .card a {
   cursor: pointer;
   color: #3e3e3e;
@@ -126,11 +132,11 @@
   color: #207c71;
 }
 .card:hover {
-  background-color: #207c71;
+  background-color: #f0f0f0;
   transition: 0.3s ease-in-out;
 }
-.card:hover p, .card:hover span {
-  color: #f0f0f0;
+.card:hover .card-body p {
+  color: #3e3e3e;
 }
 .card img {
   width: 70px;
@@ -145,10 +151,11 @@
   margin-bottom: 0px;
   font-size: 15px;
   font-weight: bold;
-  color: #474746;
+  color: #f0f0f0;
 }
 .card span {
   font-size: 12px;
+  color: #f0f0f0;
 }
 
 .configtogo h1 {

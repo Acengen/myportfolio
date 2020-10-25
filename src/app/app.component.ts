@@ -6,4 +6,12 @@ import { MywebService } from './myweb.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent implements OnInit {
+  isActive:boolean;
+  ngOnInit(): void {
+      this.webService.removeClassEmitter.subscribe(
+        (isactive:boolean) => this.isActive = isactive
+      )
+  }
+  constructor(private webService: MywebService){}
+}

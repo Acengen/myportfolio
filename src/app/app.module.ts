@@ -16,7 +16,8 @@ import { MyGamesComponent } from './my-games/my-games.component';
 import { SingleGameComponent } from './my-games/single-game/single-game.component';
 import { FooterContactComponent } from './footer-contact/footer-contact.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     FooterContactComponent,
     WelcomeComponent
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
