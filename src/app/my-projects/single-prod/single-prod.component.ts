@@ -11,10 +11,14 @@ export class SingleProdComponent implements OnInit {
   
  @Input() project:Project;
  @Input() index:number;
+ haveWeb:boolean = true;
  isConfig:boolean = false;
   constructor() { }
 
   ngOnInit(): void {
+    if(this.project.link === null) {
+        this.haveWeb = false
+    }
   }
 
   isConfigClicked() {

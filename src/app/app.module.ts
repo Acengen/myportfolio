@@ -20,7 +20,7 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     OverlayLoadingPageComponent,
     LoadingSpinnerPageComponent,
@@ -34,7 +34,7 @@ import {HttpClientModule} from '@angular/common/http';
     SingleGameComponent,
     FooterContactComponent,
     WelcomeComponent
-  ],
+   ],
   imports: [BrowserModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
