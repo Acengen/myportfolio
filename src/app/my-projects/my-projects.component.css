@@ -1,9 +1,30 @@
+.projects {
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.overlayimg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.06;
+    z-index: -2222;
+}
 .projects-question {
-    background-color: #45a095;
     padding: 20px;
     font-size: 40px;
-    color: #eceae7;
-    box-shadow: 8px 8px 10px #bbb9b7;
+    color: #45a095;
+    box-shadow: 1px 1px 5px #e6e6e6;
     text-align: center;
 }
 .projects-text {

@@ -1,13 +1,9 @@
 <app-overlay-loading-page></app-overlay-loading-page>
 <app-welcome></app-welcome>
 <div class="container-fluid">
-  <app-header></app-header>
-  <div class="page-over" *ngIf="!isActive;else null">
-    <p>click on enter</p>
-  </div>
-    <app-about-me></app-about-me>
-    <app-my-skills></app-my-skills>
-    <app-my-projects></app-my-projects>
-    <app-my-games></app-my-games>
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  <div class="allrights">
+    <span>All rights reserved<i class="fa fa-copyright"></i></span>
 </div>
-<app-footer-contact></app-footer-contact>
+</div>

@@ -1,0 +1,10 @@
+<div class="my-navbar" *ngIf="willShow">
+  <i (click)="showNav()" *ngIf="!openNav" class="fa fa-arrow-left"></i>
+  <i (click)="closeNav()" *ngIf="openNav" class="fa fa-arrow-right"></i>
+  <div class="navlinks" [ngClass]="{'closeNav': !openNav}">
+  <a class="links-nav" [routerLink]="['/home']" >Home</a>
+  <a class="links-nav" [routerLink]="['/about']" >About</a>
+  <a class="links-nav" [routerLink]="['/skills']" >Skills</a>
+  <a class="links-nav" [routerLink]="['/projects']">Projects</a>
+  </div>
+</div>

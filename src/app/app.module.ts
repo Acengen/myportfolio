@@ -18,9 +18,19 @@ import { FooterContactComponent } from './footer-contact/footer-contact.componen
 import { WelcomeComponent } from './welcome/welcome.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+
+export const approute:Routes = [
+  {path:"", redirectTo:"/home", pathMatch:'full'},
+  {path:"home", component:HeaderComponent},
+  {path:"about", component:AboutMeComponent},
+  {path:"skills", component:MySkillsComponent},
+  {path:"projects",component:MyProjectsComponent}
+]
 
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
     OverlayLoadingPageComponent,
     LoadingSpinnerPageComponent,
@@ -33,9 +43,10 @@ import {HttpClientModule} from '@angular/common/http';
     MyGamesComponent,
     SingleGameComponent,
     FooterContactComponent,
-    WelcomeComponent
+    WelcomeComponent,
+      NavbarComponent
    ],
-  imports: [BrowserModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, FormsModule, HttpClientModule,RouterModule.forRoot(approute)],
   providers: [],
   bootstrap: [AppComponent],
 })

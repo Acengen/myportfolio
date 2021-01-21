@@ -1,16 +1,18 @@
-<div class="my-projects" *ngIf="aboutme; else null" id="projects">
-    <div class="projects-question">
-        <h1>MY PROJECTS <i style="font-size: 20px;" class="fa fa-question"></i>
-            <i style="font-size: 25px;" class="fa fa-question"></i>
-            <i style="font-size: 30px;" class="fa fa-question"></i></h1>
+<div class="projects">
+    <img class="overlayimg" src="../../assets/images/photo-1515879218367-8466d910aaa4.jpg" alt="">
+    <div class="my-projects">
+        <div class="projects-question">
+            <h1>MY PROJECTS </h1>
+        </div>
+        <div class="projects-text">
+            <p>MY LATEST WEB PROJECTS</p>
+            <span>If you wont to see more of my projects <a href="https://github.com/Acengen" target="_blank">Link</a></span>
+        </div>
+        <div class="project-card">
+            <app-single-prod *ngFor="let prod of projects; let i = index" [project]="prod" [index]="i"></app-single-prod>
+        </div>
     </div>
-    <div class="projects-text">
-        <p>MY LATEST WEB PROJECTS</p>
-        <span>If you wont to see more of my projects <a href="https://github.com/Acengen" target="_blank">Link</a></span>
-    </div>
-    <div class="project-card">
-        <app-single-prod *ngFor="let prod of projects; let i = index" [project]="prod" [index]="i"></app-single-prod>
-    </div>
+    <app-my-games></app-my-games>
 </div>
 
 

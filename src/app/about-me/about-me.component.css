@@ -1,9 +1,9 @@
 .about_me_question {
-  background-color: #45a095;
+  
   padding: 20px;
   font-size: 40px;
-  color: #eceae7;
-  box-shadow: 8px 8px 10px #bbb9b7;
+  color: #45a095;
+  box-shadow: 1px 1px 5px #e6e6e6;
   text-align: center;
 }
 
@@ -32,6 +32,14 @@
     opacity: 1;
   }
 }
+.overlayimg {
+  width: 200px;
+  position: fixed;
+  top:20%;
+  left: 0;
+  opacity: 0.3;
+  z-index: -2222;
+}
 
 @media (max-width: 420px) {
   .about_me_text {
@@ -39,10 +47,14 @@
     padding: 20px;
     text-align: unset;
   }
+  .about_me_paragraph {
+    font-size: 15px;
+  }
   .about_me_question {
     padding: 10px;
   }
+  
   .about_me_question h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }

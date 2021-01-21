@@ -12,6 +12,13 @@
   font-size: 30px;
   display: none;
 }
+
+.allrights {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
 @media(max-width: 580px) {
   .page-over {
     width: 100%;
